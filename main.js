@@ -8,3 +8,7 @@ const reset = () => {
     }
 };
 
+const init = () => {
+    ($scope.sheet = JSON.parse( localStorage.getItem("") )) || reset();
+    $scope.worker = new Worker("worker.js");
+};

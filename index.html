@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanilla Sheets</title>
+    <script src="main.js"></script>
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    
+<body onload="Spreadsheet(window.$scope = {Rows: [], Cols: [], sheet: {}})">
+    <table>
+        <tr>
+            <th>
+                <button type="button" onclick="reset(); calc();"></button>
+            </th>
+        </tr>
+    </table>
 </body>
 </html>

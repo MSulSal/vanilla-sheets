@@ -99,4 +99,7 @@ const Spreadsheet = ($scope) => {
 
         document.querySelector("table").appendChild(tr);
     });
+
+    $scope.worker.onmessage = calc;
+    $scope.worker.postMessage(null);
 }
